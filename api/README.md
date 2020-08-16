@@ -9,15 +9,15 @@ Os verbos usados na API são (POST, GET , PUT e DELETE);
 
 Para executar as oporações siga os modelos abaixo.
 
-### http://"localhost"/api/source/Controllers/user.php;
+### http:// "webserver"/api/source/Controllers/user.php
 > Port: 80;
 : 
 
 ```shell
 {
 	"nome" : "Mateus",
-	"sobrenome" : "Bastos",
-	"email" : "werttyeerer@gmail.com",
+	"sobrenome" : "Silva",
+	"email" : "test1@gmail.com",
 	"telefone" : "(11) 95858-9658"
 }  
 "Request JSON" 
@@ -28,7 +28,7 @@ Para executar as oporações siga os modelos abaixo.
 
 Para executar as oporações siga os modelos abaixo.
 
-### http://"localhost"/api/source/Controllers/user.php;;
+### http:// "webserver"/api/source/Controllers/user.php
 > Port: 80;
 : 
 
@@ -36,7 +36,7 @@ Para executar as oporações siga os modelos abaixo.
 {
 	"nome" : "New Name",
 	"sobrenome" : "New sobre nome",
-	"email" : "werttyeerer@gmail.com",
+	"email" : "test1@gmail.com",
 	"telefone" : "(21) 8899-9658"	
 }
 "Request JSON" 
@@ -54,7 +54,7 @@ Para executar as oporações siga os modelos abaixo.
 
 Para executar as oporações siga os modelos abaixo.
 
-### http:// "localhost" /api/source/Controllers/user.php?email=werttyeerer@gmail.com
+### http:// "webserver" /api/source/Controllers/user.php?email=test1@gmail.com
 > Port: 80;
 : 
 
@@ -70,7 +70,7 @@ Para executar as oporações siga os modelos abaixo.
 
 Para executar as oporações siga os modelos abaixo.
 
-### http:// "localhost" /api/source/Controllers/user.php
+### http:// "webserver" /api/source/Controllers/user.php
 > Port: 80;
 : 
 
@@ -80,7 +80,7 @@ Para executar as oporações siga os modelos abaixo.
     {
       "nome": "Mateus",
       "sobrenome": "Bastos",
-      "email": "werttyeerer@gmail.com",
+      "email": "test1@gmail.com",
       "telefone": "(11) 95858-9658"
     },
     {
