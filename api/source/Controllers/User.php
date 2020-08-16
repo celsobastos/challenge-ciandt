@@ -1,13 +1,8 @@
 <?php
 
 namespace Source\Controllers;
-
 use Source\Models\User;
-use Source\Models\Validations;
-
 require "../../vendor/autoload.php";
-require "../Config.php";
-
 
 switch ($_SERVER["REQUEST_METHOD"]) {
     case "POST":
