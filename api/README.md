@@ -8,8 +8,7 @@ Os verbos usados na API são (POST, GET , PUT e DELETE);
 
 - Para executar as oporações siga os modelos abaixo;
 
-- POST -----------------------------------------------------------------
-- Verbo: POST;
+<h2>Verbo: POST</h2>
 
 http://"localhost"/api/source/Controllers/user.php;
 Port: 80;
@@ -21,8 +20,7 @@ Request "JSON":
 	"telefone" : "(11) 95858-9658"
 }
 
-- GET -----------------------------------------------------------------;
-- Verbo: GET;
+<h2>Verbo: GET</h2>
 
 http://"localhost"/api/source/Controllers/user.php;
 Port: 80;
@@ -45,8 +43,7 @@ Response;
   ]
 }
 
-- PUT -----------------------------------------------------------------;
-- Verbo: PUT;
+<h2>Verbo: PUT</h2>
 
 http://"localhost"/api/source/Controllers/user.php;
 Port: 80;
@@ -62,8 +59,7 @@ Response "JSON";
   "response": "Usuário atualizado com sucesso!"
 }
 
-- DELETE -----------------------------------------------------------------;
-- Verbo: DELETE;
+<h2>Verbo: DELETE</h2>
 
 http://"localhost"/api/source/Controllers/user.php?email=werttyeerer@gmail.com;
 Port: 80;
