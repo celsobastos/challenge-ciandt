@@ -2,12 +2,13 @@
 
 - Descrição;
 
-O codigo para a construção da API foi feito eu PHP puro, não foi usado nem tipo de framework;
+O codigo para a construção da API foi feito em PHP puro, não foi utilizado nenhum tipo de framework;
 Não houve preocupação em criar URLs Limpas, já que não havia tais exigencias;
-Os verbos usados na API (POST, GET , PUT e DELETE);
-Para cadastrar um novo usuario use o request abaixo;
+Os verbos usados na API são (POST, GET , PUT e DELETE);
 
-/*  POST -----------------------------------------------------------------*/
+- Para executar as oporações siga os modelos abaixo;
+
+- POST -----------------------------------------------------------------
 - Verbo: POST;
 
 http://"localhost"/api/source/Controllers/user.php;
@@ -20,7 +21,7 @@ Request "JSON":
 	"telefone" : "(11) 95858-9658"
 }
 
-/*  GET -----------------------------------------------------------------*/
+- GET -----------------------------------------------------------------;
 - Verbo: GET;
 
 http://"localhost"/api/source/Controllers/user.php;
@@ -44,7 +45,7 @@ Response;
   ]
 }
 
-/*  PUT -----------------------------------------------------------------*/
+- PUT -----------------------------------------------------------------;
 - Verbo: PUT;
 
 http://"localhost"/api/source/Controllers/user.php;
@@ -61,8 +62,9 @@ Response "JSON";
   "response": "Usuário atualizado com sucesso!"
 }
 
-/*  DELETE -----------------------------------------------------------------*/
+- DELETE -----------------------------------------------------------------;
 - Verbo: DELETE;
+
 http://"localhost"/api/source/Controllers/user.php?email=werttyeerer@gmail.com;
 Port: 80;
 Response: "JSON";
