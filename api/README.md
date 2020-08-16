@@ -10,9 +10,9 @@
 - Para cadastrar um novo usuario use o request abaixo;
 
 - Verbo: POST;
-- http://"localhost"/api/source/Controllers/user.php;
-- Porta: 80;
-- Request "JSON": ;
+http://"localhost"/api/source/Controllers/user.php;
+Porta: 80;
+Request "JSON": 
 
 {
 	"nome" : "Mateus",
