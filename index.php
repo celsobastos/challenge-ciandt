@@ -1,24 +1,5 @@
-<?php
-
-/**
- * Autor: Celso Ricardo Bastos
- * Date: 2020/08/13
- *
- */
-
-function foiMordido()
-{
-    $messages = array('Foi Mordido', 'Não foi mordido');
-    $show = $messages[mt_rand(0, 1)];
-    return $show;
-}
-$result = foiMordido();
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +13,6 @@ $result = foiMordido();
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <title>Location</title>
     </head>
-
     <body>
         <header>
         </header>
@@ -47,16 +27,10 @@ $result = foiMordido();
         </nav>
         <section class="container p-3 my-3 text-center">
             <div class="container">
-                <h2>Algoritmo de Joãozinho</h2>
-                <p>Foi mordido ou não?</p>
-                <div class="alert alert-primary" role="alert">
-                    <p class="display-1"><?= $result ?></p>
-                </div>
-                <form action="" method="post">
-                    <button type="submit" class="btn btn-primary" name="create">Clique para testar?</button>
-                </form>
+                <h2>Candidato</h2>
+                <p>Celso Ricardo Bastos</p>
+                <p> Todas as atividades foram executadas sem a preocupação com o layout e responsividade.</p>
             </div>
         </section>
     </body>
-
 </html>

@@ -3,7 +3,7 @@
 /**
  * Autor: Celso Ricardo Bastos
  * Date: 2020/08/14
- * Create code procedural, which save data in file txt
+ * Create code procedural
  */
 session_start();
 $token = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_SPECIAL_CHARS);

@@ -2,8 +2,9 @@
 > Desenvolvimento orientato a bojetos (POO), observando uma estrutura padrão de pastas.
 
 O codigo para a construção da API foi feito em PHP puro, não foi utilizado nenhum tipo de framework;
-Não houve preocupação em criar URLs Limpas, já que não havia tais exigencias;
-Os verbos usados na API são (POST, GET , PUT e DELETE);
+Não houve preocupação em criar URLs Limpas, já que não havia tais exigencias
+Os verbos usados na API são (POST, GET, PUT e DELETE).
+Os registros desse projetos serão salvos na pasta ./api/register/register.txt
 
 ## Execução / Verbo: POST
 

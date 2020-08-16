@@ -86,12 +86,13 @@ $readyPrinter = implode("<br />", $results);
         <header>
         </header>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <a class="navbar-brand" href="../location.php">1) Location</a>
-            <a class="navbar-brand" href="../joaozinho.php">2) Joaozinho</a>
-            <a class="navbar-brand" href="../files.php">3) Files</a>
-            <a class="navbar-brand" href="form/form.php">4) Form Save .txt</a>
-            <a class="navbar-brand" href="xml/parsexml.php">5) Parse XML and save CSV</a>
-            <a class="navbar-brand" href="formselectfield.php">5) Form Select Field</a>
+            <a class="navbar-brand" href="location.php"> Atividade 1 </a>
+            <a class="navbar-brand" href="joaozinho.php"> Atividade 2</a>
+            <a class="navbar-brand" href="files.php">Atividade 3</a>
+            <a class="navbar-brand" href="form/form.php">Atividade 4</a>
+            <a class="navbar-brand" href="xml/parsexml.php"> Atividade 5</a>
+            <a class="navbar-brand" href="formselectfield.php">Atividade 6</a>
+            <a class="navbar-brand" href="apirest.php">Atividade 7</a>
         </nav>
         <section class="container p-3 my-3 text-center">
             <div class="container">
