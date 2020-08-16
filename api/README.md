@@ -1,31 +1,80 @@
-- <h1>API Rest</h1>;
-
-- Descrição;
+# API Rest
+> Desenvolvimento orientato a bojetos (POO), observando uma estrutura padrão de pastas.
 
 O codigo para a construção da API foi feito em PHP puro, não foi utilizado nenhum tipo de framework;
 Não houve preocupação em criar URLs Limpas, já que não havia tais exigencias;
 Os verbos usados na API são (POST, GET , PUT e DELETE);
 
-- Para executar as oporações siga os modelos abaixo;
+## Execução / Verbo: POST
 
-<h2>Verbo: POST</h2>
+Para executar as oporações siga os modelos abaixo.
 
-http://"localhost"/api/source/Controllers/user.php;
-Port: 80;
-Request "JSON": 
+### http://"localhost"/api/source/Controllers/user.php;
+> Port: 80;
+: 
+
+```shell
 {
 	"nome" : "Mateus",
 	"sobrenome" : "Bastos",
 	"email" : "werttyeerer@gmail.com",
 	"telefone" : "(11) 95858-9658"
+}  
+"Request JSON" 
+# prints 
+```
+
+## Execução / Verbo: PUT
+
+Para executar as oporações siga os modelos abaixo.
+
+### http://"localhost"/api/source/Controllers/user.php;;
+> Port: 80;
+: 
+
+```shell
+{
+	"nome" : "New Name",
+	"sobrenome" : "New sobre nome",
+	"email" : "werttyeerer@gmail.com",
+	"telefone" : "(21) 8899-9658"	
 }
+"Request JSON" 
+# prints 
 
-<h2>Verbo: GET</h2>
 
-http://"localhost"/api/source/Controllers/user.php;
-Port: 80;
-Request; 
-Response;
+{
+  "response": "Usuário atualizado com sucesso!"
+}
+"Response JSON";
+# prints 
+```
+
+## Execução / Verbo: DELETE
+
+Para executar as oporações siga os modelos abaixo.
+
+### http:// "localhost" /api/source/Controllers/user.php?email=werttyeerer@gmail.com
+> Port: 80;
+: 
+
+```shell
+{
+  "response": "Usuário removido com sucesso!"
+}
+"Response JSON"
+# prints 
+```
+
+## Execução / Verbo: GET
+
+Para executar as oporações siga os modelos abaixo.
+
+### http:// "localhost" /api/source/Controllers/user.php
+> Port: 80;
+: 
+
+```shell
 {
   "response": [
     {
@@ -42,28 +91,10 @@ Response;
     }
   ]
 }
+"Request JSON" 
+# prints 
+```
 
-<h2>Verbo: PUT</h2>
+## Licensing
 
-http://"localhost"/api/source/Controllers/user.php;
-Port: 80;
-Request "JSON";
-{
-	"nome" : "New Name",
-	"sobrenome" : "New sobre nome",
-	"email" : "werttyeerer@gmail.com",
-	"telefone" : "(21) 8899-9658"	
-}
-Response "JSON";
-{
-  "response": "Usuário atualizado com sucesso!"
-}
-
-<h2>Verbo: DELETE</h2>
-
-http://"localhost"/api/source/Controllers/user.php?email=werttyeerer@gmail.com;
-Port: 80;
-Response: "JSON";
-{
-  "response": "Usuário removido com sucesso!"
-}
+"The code in this project is open source."
