@@ -44,9 +44,8 @@ function location_sort($records = [], $field = "capital", $reverse = false)
             $records  []= "A capital do <b>" . $record['pais'] . "</b> é <b>" . $record['capital'] . "</b>" ;
         }
         return $records;
-
     }catch(Exception $e){
-        echo 'Error: ',  $e->getMessage(), "\n";
+        echo 'Error: ',  $e->getMessage();
     }
 }
 
@@ -64,42 +63,44 @@ $table .= "</table>";
  * View array AFTER
  */
 $results =  (array) location_sort($location, "Capital");
-
 $readyPrinter = implode("<br />", $results);    
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Location</title>
-</head>
-<body>
-    <header>
-    </header>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="location.php">1) Location</a>
-        <a class="navbar-brand" href="joaozinho.php">2) Joaozinho</a>
-        <a class="navbar-brand" href="files.php">3) Files</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>Location</title>
+    </head>
+    <body>
+        <header>
+        </header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="../location.php">1) Location</a>
+            <a class="navbar-brand" href="../joaozinho.php">2) Joaozinho</a>
+            <a class="navbar-brand" href="../files.php">3) Files</a>
+            <a class="navbar-brand" href="form/form.php">4) Form Save .txt</a>
+            <a class="navbar-brand" href="xml/parsexml.php">5) Parse XML and save CSV</a>
+            <a class="navbar-brand" href="formselectfield.php">5) Form Select Field</a>
         </nav>
-    <section class="container p-3 my-3 text-center">
-        <div class="container">
-            <h2>Before Table</h2>
-            <p>List of countries</p>
-            <p><?=$table ?></p>
-        </div>
-        <h2> After </h2>
-        <p><?=$readyPrinter?></p>
-    </section>
-</body>
+        <section class="container p-3 my-3 text-center">
+            <div class="container">
+                <h2>Before Table</h2>
+                <p>List of countries</p>
+                <p><?=$table ?></p>
+            </div>
+            <h2> After </h2>
+            <p><?=$readyPrinter?></p>
+        </section>
+    </body>
 </html>
