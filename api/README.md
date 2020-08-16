@@ -12,11 +12,10 @@
 - Verbo: POST;
 - http://"localhost"/api/source/Controllers/user.php;
 - Porta: 80;
-- Request "JSON": ;
-
+- Request "JSON":
 {
-	"nome" : "Mateus",
-	"sobrenome" : "Bastos",
-	"email" : "werttyeerer@gmail.com",
-	"telefone" : "(11) 95858-9658"
+	"nome" : "Paulo",
+	"sobrenome" : "Olavo",
+	"email" : "polavo@gmail.com",
+	"telefone" : "(11) 94444-0001"
 }
