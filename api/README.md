@@ -1,14 +1,12 @@
 # API Rest
 > Desenvolvimento orientato a bojetos (POO), observando uma estrutura padrão de pastas.
 
-O codigo para a construção da API foi feito em PHP puro, não foi utilizado nenhum tipo de framework;
-Não houve preocupação em criar URLs Limpas, já que não havia tais exigencias
+O código para a construção da API foi feito em PHP puro, não foi utilizado nenhum tipo de framework;
+Não houve preocupação em criar URLs Limpas, já que não havia tais exigências
 Os verbos usados na API são (POST, GET, PUT e DELETE).
 Os registros desse projetos serão salvos na pasta ./api/register/register.txt
 
 ## Execução / Verbo: POST
-
-Para executar as oporações siga os modelos abaixo.
 
 ### http:// "webserver"/api/source/Controllers/user.php
 > Port: 80;
@@ -26,8 +24,6 @@ Para executar as oporações siga os modelos abaixo.
 ```
 
 ## Execução / Verbo: PUT
-
-Para executar as oporações siga os modelos abaixo.
 
 ### http:// "webserver"/api/source/Controllers/user.php
 > Port: 80;
@@ -53,8 +49,6 @@ Para executar as oporações siga os modelos abaixo.
 
 ## Execução / Verbo: DELETE
 
-Para executar as oporações siga os modelos abaixo.
-
 ### http:// "webserver" /api/source/Controllers/user.php?email=test1@gmail.com
 > Port: 80;
 : 
@@ -68,8 +62,6 @@ Para executar as oporações siga os modelos abaixo.
 ```
 
 ## Execução / Verbo: GET
-
-Para executar as oporações siga os modelos abaixo.
 
 ### http:// "webserver" /api/source/Controllers/user.php
 > Port: 80;

@@ -9,7 +9,7 @@ Para acessar e testar todos os exercícios basto somente abrir o arquivo "Index.
 
 A documentação  mínima (README) para o uso da API se encontra dentro da pasta "api".
 
-## Todas as atividades poderam ser vistas atraves do INDEX.PHP
+## Todas as atividades poderão ser vistas acessando o arquivo index
 
 
 ## Licensing
