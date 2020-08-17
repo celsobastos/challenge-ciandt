@@ -40,7 +40,7 @@
                 <?php if (!empty($_SESSION['alert'])): ?>
                     <?=$_SESSION['alert']?>
                 <?php endif; ?>
-                <form action="cadastro.php" method="post">
+                <form action="controller.php" method="post" novalidate>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="name">Nome</label>
