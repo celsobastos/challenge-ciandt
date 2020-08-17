@@ -36,7 +36,6 @@ final class Validations{
 
     public static function validationAll(array $data) : bool
     {   
-
         $test = [];
         $test []= SELF::validationString($data['nome']);
         $test []= SELF::validationString($data['sobrenome']);
@@ -48,9 +47,6 @@ final class Validations{
         }
         else{
             return true;
-        }
-        
+        }  
     }
-
-
 }

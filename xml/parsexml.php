@@ -27,8 +27,7 @@ class ParseXML{
                     fputcsv($handle, $line);
             }
             fclose($handle);
-        }
-        
+    }   
 }
 
 $var = $_POST['create'] ?? null;
@@ -37,12 +36,9 @@ if(!is_null($var)){
 
     $file = new ParseXML("breakfast.xml");
     $file->createCSV();
-
     $message = "<div class='alert alert-success text-left' role='alert'>Ow great! sucesss. '/xml/food.csv'</div>";
 }
 
-/*
-*/
 ?>
 <!DOCTYPE html>
 <html lang="en">

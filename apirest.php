@@ -140,7 +140,6 @@
 
                         "The code in this project is open source."
 
-
                 </pre>
                 </p>
             </div>

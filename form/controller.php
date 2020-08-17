@@ -4,7 +4,6 @@
  * Autor: Celso Ricardo Bastos
  * Date: 2020/08/14
  */
-
 require_once "User.php";
 use form\User;
 
@@ -13,7 +12,6 @@ $token = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_SPECIAL_CHARS);
 $_SESSION['alert'] = '';
 
 $user = new User();
-
 
 $register ['user']= $_POST; // register data
 $error = []; //Error messages
@@ -70,10 +68,6 @@ else{
     $register ['user']['password']= password_hash($password, PASSWORD_DEFAULT);
 }
 
-
-/**
- * Save data
- */
 if(count($error) > 0){
     array_unshift($error, "<div class='alert alert-danger text-left' role='alert'>");
     $_SESSION['alert'] = implode("",$error) . "</div>";

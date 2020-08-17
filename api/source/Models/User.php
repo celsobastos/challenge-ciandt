@@ -89,7 +89,6 @@ class User{
             $result[] = (array) $valueFields;
         }
         return $result;
-
     }   
 
     public function existeUser($args = []) : bool
@@ -142,7 +141,6 @@ class User{
         else{
             return false;
         }
-
     }
 
     public function deleteUser(string $email) : bool
@@ -168,7 +166,5 @@ class User{
         else{
             return false;
         }
-
     }
-
 }

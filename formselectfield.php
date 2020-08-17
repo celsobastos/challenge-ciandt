@@ -4,7 +4,6 @@ spl_autoload_register(function ($className) {
     require_once ('classes/' . $className . '.class.php');
 });
 
-
 $array = [
     'options' => ['Jan' => 'Janeiro','Fev', 'Mar','Abr','Mai','Jun','Jul'],
     'name'     => 'meses',

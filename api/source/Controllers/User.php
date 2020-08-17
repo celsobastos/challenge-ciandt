@@ -9,22 +9,14 @@ switch ($_SERVER["REQUEST_METHOD"]) {
 		
         $data = (array) json_decode(file_get_contents("php://input"), false);
 
-        /**
-         * data not sent
-         */
         if (!$data) {
             header("HTTP/1.1 400 Bad Request");
             echo json_encode(array("response" => "Nenhum dados informado!"));
             exit;
         }
 
-
         $user = new User($data);
 
-        /**
-         * Existe user
-         */
-        
         $result = $user->existeUser(['email' => trim($data['email'])]);
         if($result){
             header("HTTP/1.1 401 Unauthorized");
@@ -32,9 +24,6 @@ switch ($_SERVER["REQUEST_METHOD"]) {
             exit;  
         }
 
-        /**
-         * Save data
-         */
         if(!$user->createUser()){
             header("HTTP/1.1 500 Internal Server Error");
             echo json_encode(array("response" => "Internal Server Error"));
@@ -70,9 +59,6 @@ switch ($_SERVER["REQUEST_METHOD"]) {
 
         $user = new User($data);
 
-        /**
-         * Existe user
-         */
         $result = $user->existeUser(['email' => trim($data['email'])]);
         if(!$result){
             header("HTTP/1.1 401 Unauthorized");
@@ -80,9 +66,6 @@ switch ($_SERVER["REQUEST_METHOD"]) {
             exit;  
         }
 
-        /**
-         * Update user
-         */
         $result = $user->updateUser(trim($data['email']));
         if($result){
             header("HTTP/1.1 200 Update");
@@ -105,9 +88,7 @@ switch ($_SERVER["REQUEST_METHOD"]) {
         }
 
         $user = new User();
-        /**
-         * Existe user
-         */
+
         $result = $user->existeUser(['email' => trim($email)]);
         if(!$result){
             header("HTTP/1.1 401 Unauthorized");

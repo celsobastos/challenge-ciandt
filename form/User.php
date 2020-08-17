@@ -21,11 +21,6 @@ class User{
         $this->login = $args['login'] ?? '';
     }
 
-    /**
-     * Serach email and login 
-     * @param args array 
-     * @return boolean
-     */
     public function existeData($field = '', $value = '')
     {
         $register = array_keys(get_object_vars($this));
@@ -67,14 +62,12 @@ class User{
         return (strlen($string) > 0 && strlen($string) <= 30) && !is_numeric($string);
     }
 
-
     public static function validationEmail(string $email): bool
     {
         $email = htmlspecialchars(trim($email));
         return filter_var($email,FILTER_VALIDATE_EMAIL);
     }
 
-    
     public static function validationTelefone(string $telefone) : bool
     {
         $telefone = htmlspecialchars(trim($telefone));
@@ -109,6 +102,4 @@ class User{
 
         return true;
     }
-
-
 }
